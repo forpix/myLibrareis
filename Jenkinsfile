@@ -4,7 +4,7 @@ pipeline {
   stages {
     stage('Build Stage') {
       steps {
-        notifyPipelineStart.call()
+        notifyPipelineStart()
         notifyStageStart()
         echo "Build stage start"
         sh "sleep 5"
