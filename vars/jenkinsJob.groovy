@@ -1,6 +1,6 @@
 def call(){
 
-deletedir()
+deleteDir()
     node {
         stage('Checkout') {
             checkout scm
