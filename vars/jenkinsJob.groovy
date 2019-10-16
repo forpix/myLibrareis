@@ -8,7 +8,7 @@ deleteDir()
     try {
         stage ('Build') {
             sh "echo 'shell scripts to build project...'"
-            build()
+           
         }
         stage ('Tests') {
             parallel 'static': {
