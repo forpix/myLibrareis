@@ -4,7 +4,7 @@ deleteDir()
     node {
         stage('Checkout') {
             checkout scm
-        }
+        
     try {
         stage ('Build') {
             sh "echo 'shell scripts to build project...'"
@@ -28,6 +28,7 @@ deleteDir()
         currentBuild.result = 'FAILED'
         throw err
     }
+        }
 
         // Execute different stages depending on the job
         if(env.JOB_NAME.contains("deploy")){
