@@ -2,6 +2,5 @@
 
 // Configure using microservice-pipelines and using "part2" branch
 @Library("LEAD") _
-
 // Entry point into microservice-pipelines
 jenkinsJob.call()
