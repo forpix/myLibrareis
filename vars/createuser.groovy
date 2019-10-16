@@ -1,6 +1,5 @@
 def user () {
-  import jenkins.model.*
-  import hudson.security.*
+  
 
   def instance = Jenkins.getInstance()
 
