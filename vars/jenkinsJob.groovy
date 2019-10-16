@@ -41,7 +41,7 @@ deletedir()
 def build(){
     stage("Package artifact") {
         def mvnHome = tool name: 'maven 3.5.4', type: 'maven'
-        sh sh "${mvnHome}/bin/mvn clean package -Dmaven.test.skip=true";pwd"
+        sh "${mvnHome}/bin/mvn clean package -Dmaven.test.skip=true";pwd"
     }
 }
 
