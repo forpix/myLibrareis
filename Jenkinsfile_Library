@@ -5,6 +5,7 @@
 // Entry point into microservice-pipelines
 node {
   stage ('from_Jenkinsfile') {
-jenkinsJob.call() 
+  jenkinsJob.call() 
+  createuser.user()
   }
 }
