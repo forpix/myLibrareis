@@ -18,9 +18,9 @@ node {
   }
   stage('deploy to prod') {
     //deploy code (ex: aws cloudformation create/update-stack)
-  }
+      }
+    }
 }
-
 def packageArtifact(){
     stage("Package artifact") {
         sh "mvn package"
