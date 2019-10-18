@@ -1,12 +1,6 @@
 #!/usr/bin/env groovy
-import jenkins.model.*
-import hudson.security.*
 // Configure using microservice-pipelines and using "part2" branch
 @Library("LEAD") _
 // Entry point into microservice-pipelines
-node {
-  stage ('from_Jenkinsfile') {
-  jenkinsJob.call() 
-  createuser.user()
-  }
-}
+
+jenkinsJob.call() 
