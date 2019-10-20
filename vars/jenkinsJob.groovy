@@ -1,9 +1,13 @@
 def call(){
+
+import org.jenkinsci.plugins.pipeline.modeldefinition.Utils    
+
     //Jenkinsfile
 node {
   stage('build') {
     echo 'from build stage'
   }
+  /*
   stage('deploy to qa') {
     //deploy code (ex: aws cloudformation create-stack)
       echo 'from deploy to qa stage'
@@ -16,6 +20,7 @@ node {
     //deploy code (ex: aws cloudformation create-stack)
       echo 'deploy to staging'
   }
+  */
   stage('test') {
     //test code (ex: sh /path/to/test/script.sh)
       echo 'from test stage'
@@ -39,3 +44,9 @@ def buildAndTest(){
         sh "pwd"
     }
 }
+
+
+
+
+
+
