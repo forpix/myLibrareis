@@ -14,8 +14,8 @@ node {
   }
   
   stage('comitting') {
-    sh'touch test1.txt'
-    git.add('.')
+    sh 'git pull origin develop;rm -rf test.txt test1.txt;git add -A '
+    git.commit('removed the test test1', 'forpix', 'forpix321@gmail.com')
     git.commit('message', 'forpix', 'forpix321@gmail.com')
    
   }
