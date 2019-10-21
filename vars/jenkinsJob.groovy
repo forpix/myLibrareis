@@ -1,6 +1,8 @@
 def call(){
 
-import org.jenkinsci.plugins.pipeline.modeldefinition.Utils    
+properties([
+        disableConcurrentBuilds()
+])    
 
     //Jenkinsfile
 node {
