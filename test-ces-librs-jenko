@@ -14,7 +14,7 @@ node {
   }
   
   stage('comitting') {
-    sh'git pull origin develop;touch test.txt'
+    sh'touch test1.txt'
     git.add('.')
     git.commit('message', 'forpix', 'forpix321@gmail.com')
    
