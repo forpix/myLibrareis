@@ -1,4 +1,4 @@
-@Library('LEAD@bc4b83b')
+@Library('LEAD@master')
 import com.cloudogu.ces.cesbuildlib.*
 
 node {
