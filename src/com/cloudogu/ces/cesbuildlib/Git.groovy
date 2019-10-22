@@ -57,7 +57,7 @@ class Git implements Serializable {
      * @return name of the current branch.
      */
     String getBranchName() {
-        script.env.BRANCH_NAME
+         sh.returnStdOut "git rev-parse --abbrev-ref HEAD"
     }
 
     /**
